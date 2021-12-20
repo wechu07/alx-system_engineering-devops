@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#Displays the content of the current directory in a list format
-#Only the part of the name with first dash is displayed
-list=$(ls)
-for i in $list;
+# This script is displaying files in current dir without task numbers
+
+for f in *
 do
-echo "$i" | cut -d '-' -f2
+	echo "${f/*-/}"
 done

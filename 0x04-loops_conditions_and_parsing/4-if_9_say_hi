@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
-#prints best schhol 10 times using while if 9 say hi
-n=1
+# This script is displaying "Best School" 10 times, prints hi on 9th
 
-while [ $n -le 10 ]
+i=0
+
+while ((i < 10))
 do
-    echo "Best School"
-    if [ $n -eq 9 ]
+	echo "Best School"
+	let i++
+	if ((i == 9))
 	then
-	    echo "Hi"
+		echo "Hi"
 	fi
-    n=$((n+1))
 done
